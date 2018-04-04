@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 from django.conf.urls import url
-
+from .views import nose
 urlpatterns = [
-    url(r'^usuarios/$', 'si entro al home :D', name='usuarios'),
+   url(r'^registro/$', nose.as_view(), name='registro')
 ]
